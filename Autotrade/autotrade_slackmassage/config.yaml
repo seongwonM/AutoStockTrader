@@ -1,0 +1,19 @@
+#홈페이지에서 API서비스 신청시 받은 Appkey, Appsecret 값 설정
+APP_KEY: "PSYaS2A9swIxlluZBiHPUY1eWZn0Sa8vnXwh"
+APP_SECRET: "onB3qRWlj4JZzFJm3PJkuKXZacOF8lFRwXChq/jxJ/7+Q6TSLv/gK7BpbdfmYnBtomzVNFu+xPWFkNv9XM91A6PYMA4bKamKW/wfotjg/pg86r0AIGMRKGIq4j8Awqw5TrkQz/Dncl9GYTq/fGZjMtwz8p51QiHTOZzpBSB10DrfG0H7dT8="
+
+#계좌번호 앞 8자리
+CANO: "6415----"
+#계좌번호 뒤 2자리
+ACNT_PRDT_CD: "01"
+
+#실전투자
+URL_BASE: "https://openapi.koreainvestment.com:9443"
+#모의투자
+# URL_BASE: "https://openapivts.koreainvestment.com:29443"
+
+#Slack 웹훅 URL
+SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+SLACK_TOKEN: "xoxb-6882942961570-6880060124453-h8b5heigABzKsD54kgYXrWnf" # 
+SLACK_CHANNEL: "#automatictrading" #
+
