@@ -7,6 +7,7 @@
 |UI|streamlit코드|
 |data|모델 훈련용 데이터|
 |model|시계열 모델 코드|
+|profit|수익률 계산 코드|
 ---
 - streamlit 실행 방법
 `streamlit run "파일경로"`
