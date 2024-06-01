@@ -5,3 +5,5 @@ transformers
 torch
 scikit-learn
 yfinance
+neuralforecast
+
