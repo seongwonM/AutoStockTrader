@@ -20,7 +20,7 @@ def get_model_prediction(stock_code, current_hour_key):
     test_loader=stock.data_loader(5, 't')
     stock.create_model()
     stock.model.load_state_dict(torch.load('close.pth'))
-    stock.train(train_loader, valid_loader, test_loader, 't', num_epoch = 100)
-    predicted=stock.pred_value('t')
+    stock.train(train_loader, valid_loader, test_loader, 'test', num_epoch = 100)
+    predicted, actual =stock.pred_value('t')
 
     return predicted
