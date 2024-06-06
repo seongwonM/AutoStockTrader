@@ -5,3 +5,8 @@ transformers
 torch
 scikit-learn
 yfinance
+neuralforecast.core
+neuralforecast.models
+neuralforecast.losses.numpy
+numpy
+neuralforecast.losses.pytorch
