@@ -170,7 +170,7 @@ def get_previous_row(stock_code, current_hour_key):
     ''', (stock_code, current_hour_key))
     return cursor.fetchone()
 
-def get_target_price_change(stock_code):
+def get_target_price_change(stock_code, k):
     now = datetime.datetime.now()
     current_hour_key = now.strftime('%Y-%m-%d %H')
 
@@ -191,11 +191,12 @@ def get_target_price_change(stock_code):
 
     cursor.execute('SELECT open FROM price_info WHERE time_key = ? AND stock_code = ?', (current_hour_key, stock_code))
     stck_oprc = cursor.fetchone()
-
+    
+    # k는 변동성 돌파 전략의 비례계수
     if stck_oprc and prev_data:
         stck_oprc = stck_oprc[0]
         stck_hgpr, stck_lwpr = prev_data
-        target_price = stck_oprc + (stck_hgpr - stck_lwpr) * 0.3
+        target_price = stck_oprc + (stck_hgpr - stck_lwpr) * k
         return target_price
     else:
         return None
