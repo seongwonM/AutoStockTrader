@@ -17,7 +17,7 @@ import numpy as np
 import datetime
 import pytz
 import sys
-sys.path.append('your_api_key')
+sys.path.append('chg_close_path.pth')
 
 from neuralforecast import NeuralForecast
 
