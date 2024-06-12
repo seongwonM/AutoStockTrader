@@ -17,7 +17,7 @@ import numpy as np
 import datetime
 import pytz
 import sys
-sys.path.append('c:/users/82105/anaconda3/envs/heonenv/lib/site-packages')
+sys.path.append('your_api_key')
 
 from neuralforecast import NeuralForecast
 
